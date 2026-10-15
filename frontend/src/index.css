@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+:root,
+html,
+body,
+#root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: black;
+  background-color: lightgrey !important;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Global Page & Card Utility Classes using Color Names */
+.bg-light-grey {
+  background-color: lightgrey !important;
+}
+
+.bg-black-card {
+  background-color: black;
+}
+
+.border-gray-custom {
+  border-color: gray;
+}
+
+/* Auth Page Styles */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  background-color: lightgrey !important;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  padding: 36px 30px;
+}
+
+.brand-wrap {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 12px;
+  border-radius: 14px;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.page-subtitle {
+  margin: 8px 0 0;
+  color: silver;
+  font-size: 0.95rem;
+}
+
+.auth-title {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 700;
+}
+
+.auth-subtitle {
+  margin: 0 0 20px;
+  color: silver;
+  font-size: 0.92rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: silver;
+}
+
+.auth-input {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 12px;
+  background-color: black;
+  padding: 12px 14px;
+  color: white;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-input:focus {
+  border-color: white;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.auth-btn {
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  padding: 13px 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.auth-btn:hover {
+  background-color: lightgray;
+  transform: translateY(-1px);
+}
+
+.auth-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-error {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: rgba(220, 20, 60, 0.2);
+  color: crimson;
+  font-size: 0.85rem;
+  border: 1px solid crimson;
+}
+
+.auth-footer {
+  margin-top: 22px;
+  text-align: center;
+  color: silver;
+  font-size: 0.92rem;
+}
+
+.auth-link {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 700;
+}
+
+/* Home Page Styles */
+.home-page {
+  min-height: calc(100vh - 73px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey !important;
+  padding: 32px 20px;
+}
+
+.home-card {
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  padding: 48px 32px;
+}
+
+.home-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin: 0;
+  color: white;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.home-subtitle {
+  margin: 18px auto 0;
+  max-width: 440px;
+  color: silver;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 28px;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.home-button:hover {
+  background-color: lightgray;
+  transform: translateY(-2px);
+}
